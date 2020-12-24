@@ -1,0 +1,21 @@
+#wrapper {
+    height: 100vh;
+    width: 100vw;
+}
+
+#title-wrap {
+    font-family: RubikBold;
+    text-align: center;
+    font-size: 48px;
+    letter-spacing: -3px;
+}
+
+#wrapper img {
+
+    height: 33px;
+    width: 33px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 15px;
+}

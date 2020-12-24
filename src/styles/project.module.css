@@ -1,0 +1,156 @@
+#wrapper {
+    height: auto;
+    width: calc(80% - 80px);
+    background-color: white;
+    border-radius: 50px;
+    margin: 50px;
+    box-shadow: -7px 5px 4px 3px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+}
+
+#screenshot-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#screenshot {
+    height: auto;
+    width: max(70%, 300px);
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+#previews {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+#previews input {
+    height: 30px;
+    width: max(100%, 125px);
+    border-radius: 15px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#code-wrap {
+    height: 30px;
+    width: max(32.5%, 125px);
+    position: relative;
+    margin-right: 10px;
+}
+
+#code-wrap img, #live-wrap svg {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+#live-wrap svg {
+    z-index: 1;
+}
+
+#code {
+    background-color: white;
+    border: 1px solid black
+}
+
+#live-wrap {
+    height: 30px;
+    width: max(32.5%, 125px);
+    position: relative;
+    margin-left: 10px;
+}
+
+#live {
+    background-color: var(--prim-orange);
+    border: 1px solid #CFCFCF;
+}
+
+#text-wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#title {
+    font-family: RubikBold;
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+#sub-title {
+    font-family: Rubik;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+#info {
+    font-family: OpenSans;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+}
+
+@media(min-width: 900px) {
+
+    #wrapper {
+        height: 250px;
+        max-width: 550px;
+        margin: 50px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 35px;
+    }
+
+    #text-wrap {
+        height: 100%;
+        width: 400px;
+        text-align: left;
+    }
+
+    #screenshot-wrap {
+        width: 300px;
+        padding-top: 25px;
+    }
+
+    #sub-title {
+        margin-bottom: 40px;
+    }
+
+    #info {
+        width: 70%;
+    }
+
+    #code-wrap {
+        height: 40px;
+        width: 300px;
+        margin-left: 5px;
+    }
+
+    #live-wrap {
+        height: 40px;
+        width: 300px;
+
+    }
+
+    #previews input {
+        height: 40px;
+        width: 135px;
+    }
+    
+}

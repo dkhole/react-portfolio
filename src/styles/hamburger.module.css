@@ -1,0 +1,131 @@
+#hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  margin: 20px;
+  transition: ease 0.3s;
+}
+
+a {
+  text-decoration: none;
+}
+
+  
+#hamburger input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  outline: 0; /* check if this gets rid of blue box when clicking. if not try focus property */
+}
+
+#hamburger span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  margin-left: 7px;
+  position: relative;
+  background: tomato;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    opacity 0.55s ease;
+}
+
+#hamburger input:hover ~ span {
+  background: tomato;
+}
+
+#hamburger input:checked:hover ~ span {
+  background: tomato;
+}
+
+#hamburger span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#hamburger span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+  * Transform all the slices of hamburger
+  * into a cross
+  */
+#hamburger input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+  * hide the middle one.
+  */
+#hamburger input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+  * last one should go the other direction
+  */
+#hamburger input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#ham-links {
+  position: absolute;
+  top: -30px;
+  left: -200px;
+  height: 220px;
+  width: 400px;
+
+  padding-top: 40px;
+
+  background: white;
+  box-shadow: -7px 5px 4px 3px rgba(0, 0, 0, 0.05);
+
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  display: flex;
+  flex-direction: column;
+  /* to stop flickering of text in safari */
+  border-radius: 15px;
+  border: 1px solid lightgrey;
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+
+#ham-links div {
+  font-family: OpenSans;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 10px;
+  margin-left: 70px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: black;
+}
+
+#ham-links div:hover {
+  border-color: tomato;
+  color: tomato;
+}
+
+#hamburger input:checked ~ #ham-links {
+  transform: none;
+}

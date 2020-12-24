@@ -1,0 +1,31 @@
+@import-normalize;
+
+@font-face {
+  font-family: 'OpenSans';
+  src: local('OpenSans'), url(./fonts/Opensans.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'RubikBold';
+  src: local('RubikBold'), url(./fonts/Rubik-Bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: local('Rubik'), url(./fonts/Rubik-Regular.woff) format('woff');
+}
+
+:root {
+  --prim-orange:  rgb(255, 184, 0);
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(240, 240, 240);
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}

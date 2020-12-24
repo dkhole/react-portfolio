@@ -1,0 +1,41 @@
+#wrapper {
+    height: auto;
+    width: 100vw;
+    position: relative;
+}
+
+#wrapper #git {
+    height: 33px;
+    width: 33px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 15px;
+}
+
+#title-wrap {
+    font-family: RubikBold;
+    font-size: 48px;
+    height: 60px;
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: -3px;
+}
+
+#projects-wrap {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width: 900px) {
+    #projects-wrap {
+        min-height: calc(100vh - 180px);
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

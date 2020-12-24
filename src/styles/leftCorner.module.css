@@ -1,0 +1,33 @@
+#wrapper {
+    height: 60px;
+    width: 60px;
+}
+
+#first {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    width: 40px;
+    border: 2.5px solid var(--prim-orange);
+}
+
+#second {
+    position: absolute;
+    top: 55px;
+    left: -37px;
+    width: 100px;
+    border: 2.5px solid var(--prim-orange);
+    transform: rotate(90deg);
+}
+
+@media(min-width: 900px) {
+    #first {
+        width: 200px;
+    }
+
+    #second {
+        top: 27.5px;
+        left: -5px;
+        width: 40px;
+    }
+}
