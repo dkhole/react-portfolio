@@ -8,7 +8,7 @@ import About from './components/about.js';
 
 ReactDOM.render(
   <BrowserRouter>
-    <Route exact path="/" component={Home} />
+    <Route exact path="/react-portfolio" component={Home} />
     <Route path="/projects" component={Projects} />
     <Route path="/about" component={About} />
   </BrowserRouter>,
