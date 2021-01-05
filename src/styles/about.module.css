@@ -1,5 +1,5 @@
 #wrapper {
-    height: 100vh;
+    height: auto;
     width: 100vw;
     position: relative;
 }
@@ -12,11 +12,116 @@
 }
 
 #wrapper img {
-
     height: 33px;
     width: 33px;
     position: absolute;
     bottom: 0;
     left: 0;
     margin: 15px;
+}
+
+#profile {
+    height: auto;
+    width: calc(80% - 80px);
+    background-color: white;
+    border-radius: 50px;
+    margin: 50px;
+    box-shadow: -7px 5px 4px 3px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+}
+
+#first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#face-wrapper {
+    height: 200px;
+    width: 200px;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#face {
+    height: 175px;
+    width: 175px;
+    margin: 5px;
+}
+
+#name {
+    font-family: RubikBold;
+    font-size: 26px;
+}
+
+#intro {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#country {
+    margin-top: 5px;
+}
+
+#details {
+    font-family: OpenSans;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 25px;
+}
+
+#nationality span {
+    margin-right: 90px;
+}
+
+#email span {
+    margin-right: 35px;
+}
+
+#github span {
+    margin-right: 15px;
+}
+
+#skills-wrap {
+    font-family: OpenSans;
+    width: 250px;
+}
+
+#skill-title {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#skills {
+    line-height: 20px;
+    font-size: 14px;
+}
+
+@media(min-width: 900px) {
+    #wrapper {
+        height: 100vh;
+    }
+    #profile {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        max-width: 850px;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    #intro {
+        text-align: left;
+    }
+
+    #skills {
+        width: 400px;
+    }
 }

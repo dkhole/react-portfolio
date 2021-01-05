@@ -139,20 +139,19 @@
     }
 
     #code-wrap {
-        height: 40px;
-        width: 300px;
-        margin-left: 5px;
+        height: 30px;
+        width: 120px;
+
     }
 
     #live-wrap {
-        height: 40px;
-        width: 300px;
-
+        height: 30px;
+        width: 120px;
     }
 
     #previews input {
-        height: 40px;
-        width: 135px;
+        height: 30px;
+        width: 120px;
     }
     
 }
