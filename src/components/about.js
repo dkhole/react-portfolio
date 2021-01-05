@@ -15,7 +15,7 @@ export default function About() {
         </div>
 
         <div id={styles.profile}>
-          <img></img>
+          <img alt="profile"></img>
           <div id={styles.info}>
             <div id={styles.name}>Daniel Jungho Lee</div>
             <div id={styles.country}>SYD,NSW</div>

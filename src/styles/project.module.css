@@ -19,31 +19,33 @@
 
 #screenshot {
     height: auto;
-    width: max(70%, 300px);
+    width: max(70%, 250px);
     border-radius: 50px;
     margin-bottom: 20px;
 }
 
 #previews {
-    width: 100%;
+    width: 110%;
     display: flex;
     justify-content: center;
     margin-bottom: 25px;
+
 }
 
 #previews input {
     height: 30px;
-    width: max(100%, 125px);
+    width: max(100%, 110px);
     border-radius: 15px;
     position: absolute;
     cursor: pointer;
+
 }
 
 #code-wrap {
     height: 30px;
     width: max(32.5%, 125px);
     position: relative;
-    margin-right: 10px;
+    
 }
 
 #code-wrap img, #live-wrap svg {
