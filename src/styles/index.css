@@ -35,7 +35,8 @@ body {
 }
 
 #light-wrap {
-  margin-top: calc(100vh - 500px);
+  
+  margin-top: calc(100vh - 600px);
 }
 
 #home-wrap:hover #home-icon {
@@ -52,4 +53,10 @@ body {
 
 #light-wrap:hover #light-icon {
   fill: var(--prim-orange);
+}
+
+@media(min-width: 900px) {
+  #light-wrap {
+    margin-top: calc(100vh - 500px);
+  }
 }
