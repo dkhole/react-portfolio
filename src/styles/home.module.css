@@ -5,6 +5,8 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    left: 0;
+    transition: all 0.75s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
 #home img {
@@ -42,7 +44,7 @@ span span {
     width: 275px;
 }
 
-#home img {
+#git {
     height: 33px;
     width: 33px;
     position: absolute;

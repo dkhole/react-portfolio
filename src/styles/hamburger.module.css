@@ -1,5 +1,5 @@
 #hamburger {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 1;
@@ -83,18 +83,14 @@ a {
 #ham-links {
   position: absolute;
   top: -30px;
-  left: -200px;
-  height: 220px;
-  width: 400px;
-
-  padding-top: 40px;
-
-  background: white;
-  box-shadow: -7px 5px 4px 3px rgba(0, 0, 0, 0.05);
-
+  left: -140px;
+  height: 100vh;
+  width: 200px;
+  padding-top: 100px;
+  background: rgb(226, 226, 226);
+  box-shadow: inset 5px 4px 5px rgba(0, 0, 0, 0.05);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-
   display: flex;
   flex-direction: column;
   /* to stop flickering of text in safari */
@@ -102,30 +98,28 @@ a {
   border: 1px solid lightgrey;
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.75s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
 
 #ham-links div {
-  font-family: OpenSans;
-  font-size: 14px;
+  font-family: RubikBold;
+  font-size: 20px;
   cursor: pointer;
-  margin: 10px;
-  margin-left: 70px;
-  width: 100px;
-  height: 40px;
+  width: 200px;
+  height: 70px;
   text-align: center;
-  line-height: 40px;
-  border-radius: 10px;
-  border: 1px solid black;
+  margin-bottom: 30px;
   color: black;
-}
-
-#ham-links div:hover {
-  border-color: tomato;
-  color: tomato;
+  display: flex;
+  justify-content: center;
 }
 
 #hamburger input:checked ~ #ham-links {
   transform: none;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
 }

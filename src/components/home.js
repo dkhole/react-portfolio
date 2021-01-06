@@ -30,7 +30,7 @@ export default function Home() {
           <div id={styles['face-wrap']}>
             <Face id={styles.face}/>
           </div>
-          <img src={github} alt="github-logo"/>
+          <img src={github} id={styles.git} alt="github-logo"/>
           <RightCorner />     
       </div>
     );

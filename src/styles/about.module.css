@@ -2,6 +2,8 @@
     height: auto;
     width: 100vw;
     position: relative;
+    left: 0;
+    transition: all 0.75s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
 #title-wrap {

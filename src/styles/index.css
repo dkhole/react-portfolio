@@ -33,3 +33,23 @@ body {
 #root {
   overflow-x: hidden;
 }
+
+#light-wrap {
+  margin-top: calc(100vh - 500px);
+}
+
+#home-wrap:hover #home-icon {
+  stroke: var(--prim-orange);
+}
+
+#proj-wrap:hover #proj-icon {
+  stroke: var(--prim-orange);
+}
+
+#about-wrap:hover .cls-1 {
+  fill: var(--prim-orange);
+}
+
+#light-wrap:hover #light-icon {
+  fill: var(--prim-orange);
+}
