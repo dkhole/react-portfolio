@@ -49,6 +49,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+    border-radius: 100%;
 }
 
 #face {
@@ -68,6 +69,7 @@
 
 #country {
     margin-top: 5px;
+    font-family: OpenSans;
 }
 
 #details {
@@ -90,19 +92,17 @@
     margin-right: 15px;
 }
 
-#skills-wrap {
-    font-family: OpenSans;
-    width: 250px;
-}
-
-#skill-title {
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-
 #skills {
-    line-height: 20px;
-    font-size: 14px;
+    max-height: 100px;
+    max-width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#skills svg {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
 }
 
 @media(min-width: 900px) {
@@ -118,11 +118,19 @@
         margin-top: 100px;
     }
 
+    #face-wrapper {
+        border-radius: 0;
+    }
+
     #intro {
         text-align: left;
     }
 
+    #details {
+        text-align: left;
+    }
+
     #skills {
-        width: 400px;
+        max-width: 450px;
     }
 }

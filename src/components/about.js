@@ -5,6 +5,16 @@ import RightCorner from './rightCorner.js';
 import github from '../img/github.png';
 import styles from '../styles/about.module.css';
 import { ReactComponent as Face} from '../img/face.svg';
+import { ReactComponent as Html} from '../img/html-5.svg';
+import { ReactComponent as Css} from '../img/css.svg';
+import { ReactComponent as Sass} from '../img/sass.svg';
+import { ReactComponent as Javascript} from '../img/javascript.svg';
+import { ReactComponent as Typescript} from '../img/typescript.svg';
+import { ReactComponent as ReactIcon} from '../img/react.svg';
+import { ReactComponent as Gatsby} from '../img/gatsby.svg';
+import { ReactComponent as Node} from '../img/nodejs.svg';
+import { ReactComponent as Heroku} from '../img/heroku.svg';
+import { ReactComponent as Netlify} from '../img/netlify.svg';
 
 export default function About() {
     return (
@@ -31,10 +41,7 @@ export default function About() {
               <div id={styles.email}><span>Email:</span>dkhlee419@gmail.com</div>
               <div id={styles.github}><span>Github:</span>www.github.com/dkhole</div>
             </div>
-            <div id={styles['skills-wrap']}>
-              <div id={styles['skill-title']}>Skills:</div>
-              <div id={styles.skills}>HTML, CSS, SASS, JS, TS, REACT, GATSBY, Node.js, Express.js, Heroku, Netlify, SQL</div>
-            </div>
+              <div id={styles.skills}><Html /> <Css /> <Sass /> <Javascript /> <Typescript /> <ReactIcon /> <Gatsby /> <Node /> <Heroku /> <Netlify /></div>
           </div>
         </div>
 

@@ -24,7 +24,7 @@ export default function Home() {
           <Hamburger />
           <div id={styles['title-wrap']}>
               <span id={styles.name}>Daniel J<span>.</span> Lee</span>
-              <span id={styles['sub-title']}>Web Developer</span>
+              <span id={styles['sub-title']}>Web Development</span>
               <Button />
           </div>
           <div id={styles['face-wrap']}>
