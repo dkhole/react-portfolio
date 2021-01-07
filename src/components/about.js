@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import LeftCorner from './leftCorner.js';
 import Hamburger from './hamburger.js';
 import RightCorner from './rightCorner.js';
@@ -16,11 +16,21 @@ import { ReactComponent as Node} from '../img/nodejs.svg';
 import { ReactComponent as Heroku} from '../img/heroku.svg';
 import { ReactComponent as Netlify} from '../img/netlify.svg';
 
-export default function About() {
+export default function About(props) {
+  useEffect(() => {
+    if(props.darkMode) {
+      //revert colors
+      const faceLines = document.querySelectorAll(".face-line");
+      faceLines.forEach((line) => {
+        line.setAttribute("class","face-line-night");
+      });
+    }
+  }, [props.darkMode]);
+  
     return (
       <div id={styles.wrapper}>
         <LeftCorner />
-        <Hamburger />
+        <Hamburger toggleNightMode={props.nightMode} darkMode={props.darkMode} />
         <div id={styles['title-wrap']}>
           <span>About</span>
         </div>

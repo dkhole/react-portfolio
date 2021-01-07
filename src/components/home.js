@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from '../styles/home.module.css';
 import LeftCorner from './leftCorner.js';
 import Hamburger from './hamburger.js';
@@ -17,21 +17,34 @@ function Button() {
   );
 }
 
-export default function Home() {
-    return (
-      <div id={styles.home}>
-          <LeftCorner />
-          <Hamburger />
-          <div id={styles['title-wrap']}>
-              <span id={styles.name}>Daniel J<span>.</span> Lee</span>
-              <span id={styles['sub-title']}>Web Development</span>
-              <Button />
-          </div>
-          <div id={styles['face-wrap']}>
-            <Face id={styles.face}/>
-          </div>
-          <img src={github} id={styles.git} alt="github-logo"/>
-          <RightCorner />     
-      </div>
-    );
+
+
+export default function Home(props) {
+
+  useEffect(() => {
+    if(props.darkMode) {
+      //revert colors
+      const faceLines = document.querySelectorAll(".face-line");
+      faceLines.forEach((line) => {
+        line.setAttribute("class","face-line-night");
+      });
+    }
+  }, [props.darkMode]);
+
+  return (
+    <div id={styles.home}>
+        <LeftCorner />
+        <Hamburger toggleNightMode={props.nightMode} darkMode={props.darkMode} />
+        <div id={styles['title-wrap']}>
+            <span id={styles.name}>Daniel J<span>.</span> Lee</span>
+            <span id={styles['sub-title']}>Web Development</span>
+            <Button />
+        </div>
+        <div id={styles['face-wrap']}>
+          <Face id={styles.face}/>
+        </div>
+        <img src={github} id={styles.git} alt="github-logo"/>
+        <RightCorner />     
+    </div>
+  );
   }

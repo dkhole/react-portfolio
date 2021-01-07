@@ -8,7 +8,7 @@
 #wrapper input {
     height: 40px;
     width: 150px;
-    background-color: var(--prim-orange);
+    background-color: var(--button-col);
     border:  3px solid orange;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     font-family: Rubik;

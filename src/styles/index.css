@@ -16,13 +16,19 @@
 }
 
 :root {
-  --prim-orange:  rgb(255, 184, 0);
+  --prim-orange:  rgb(255, 145, 0);
+  --background-col: rgb(240, 240, 240);
+  --nav-col: rgb(226, 226, 226);
+  --prim-font-col: rgb(0, 0, 0); 
+  --button-col: rgb(255, 184, 0);
+  --icon-col: rgb(0, 0, 0);
 }
 
 html, body {
   height: 100vh;
   width: 100vw;
-  background-color: rgb(240, 240, 240);
+  background-color: var(--background-col);
+  color: var(--prim-font-col);
 }
 
 body {
@@ -37,6 +43,18 @@ body {
 #light-wrap {
   
   margin-top: calc(100vh - 600px);
+}
+
+#home-icon, #proj-icon {
+  stroke: var(--icon-col);
+}
+
+#about-wrap .cls-1 {
+  fill: var(--icon-col);
+}
+
+#light rect, #light-icon {
+  stroke: var(--icon-col);
 }
 
 #home-wrap:hover #home-icon {
@@ -54,6 +72,12 @@ body {
 #light-wrap:hover #light-icon {
   fill: var(--prim-orange);
 }
+
+.face-line-night {
+  stroke: white !important;
+}
+
+
 
 @media(min-width: 900px) {
   #light-wrap {

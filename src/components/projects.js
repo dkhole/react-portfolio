@@ -7,11 +7,12 @@ import Project from './project.js';
 import styles from '../styles/projects.module.css';
 import weather from '../img/weather.png'
 
-export default function Projects() {
+export default function Projects(props) {
+
     return (
       <div id={styles.wrapper}>
         <LeftCorner />
-        <Hamburger />
+        <Hamburger toggleNightMode={props.nightMode} darkMode={props.darkMode} />
         <div id={styles['title-wrap']}>
           <span>Projects</span>
         </div>

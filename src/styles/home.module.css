@@ -44,6 +44,10 @@ span span {
     width: 500px;
 }
 
+
+
+
+
 #git {
     height: 33px;
     width: 33px;
@@ -52,6 +56,8 @@ span span {
     left: 0;
     margin: 15px;
 }
+
+
 
 @media(min-width: 900px) {
 

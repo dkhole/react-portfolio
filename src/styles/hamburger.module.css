@@ -31,7 +31,7 @@ a {
   margin-bottom: 5px;
   margin-left: 7px;
   position: relative;
-  background: tomato;
+  background: var(--prim-orange);
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -87,7 +87,7 @@ a {
   height: 100vh;
   width: 140px;
   padding-top: 100px;
-  background: rgb(226, 226, 226);
+  background: var(--nav-col);
   box-shadow: inset 5px 4px 5px rgba(0, 0, 0, 0.05);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -95,7 +95,6 @@ a {
   flex-direction: column;
   /* to stop flickering of text in safari */
   border-radius: 15px;
-  border: 1px solid lightgrey;
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
   transition: transform 0.75s cubic-bezier(0.77, 0.2, 0.05, 1);
