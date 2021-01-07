@@ -4,7 +4,7 @@ import Hamburger from './hamburger.js';
 import RightCorner from './rightCorner.js';
 import github from '../img/github.png';
 import styles from '../styles/about.module.css';
-import { ReactComponent as Face} from '../img/Ellipse2.svg';
+import { ReactComponent as Face} from '../img/face.svg';
 
 export default function About() {
     return (

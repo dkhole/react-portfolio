@@ -3,7 +3,7 @@ import styles from '../styles/home.module.css';
 import LeftCorner from './leftCorner.js';
 import Hamburger from './hamburger.js';
 import RightCorner from './rightCorner.js';
-import { ReactComponent as Face} from '../img/Ellipse2.svg';
+import { ReactComponent as Face} from '../img/face.svg';
 import github from '../img/github.png';
 import buttonStyles from '../styles/button.module.css';
 import { Link } from "react-router-dom";

@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 125px;
+    margin-bottom: 50px;
 }
 
 #name {
@@ -40,8 +40,8 @@ span span {
 }
 
 #face {
-    height: 275px;
-    width: 275px;
+    height: 500px;
+    width: 500px;
 }
 
 #git {
@@ -94,7 +94,7 @@ span span {
     }
 
     #face {
-        height: 500px;
-        width: 500px;
+        height: 750px;
+        width: 750px;
     }
 }
