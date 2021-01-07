@@ -8,13 +8,15 @@
 #wrapper input {
     height: 40px;
     width: 150px;
-    background-color: var(--button-col);
-    border:  3px solid orange;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: var(--prim-orange);
+    border:  none;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.55);
+    color: white;
     font-family: Rubik;
     font-size: 14px;
-    font-weight: bold;
-    letter-spacing: -0.75px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px #000000;
     cursor: pointer;
 }
 
@@ -46,6 +48,10 @@
         height: 50px;
         width: 155px;
         transition: all 0.4s ease-in-out;
+    }
+
+    #wrapper input {
+        box-shadow: none;
     }
 
     #wrapper input:hover {
