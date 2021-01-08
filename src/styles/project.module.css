@@ -102,8 +102,20 @@
 #info {
     font-family: OpenSans;
     font-size: 14px;
-    line-height: 20px;
-    text-align: left;
+    line-height: 22.5px;
+    text-align: center;
+}
+
+#sub-title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+#sub-title svg{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
 }
 
 @media(min-width: 900px) {
@@ -130,12 +142,9 @@
         padding-top: 25px;
     }
 
-    #sub-title {
-        margin-bottom: 40px;
-    }
-
     #info {
         width: 70%;
+        text-align: left;
     }
 
     #code-wrap {
@@ -152,6 +161,10 @@
     #previews a {
         height: 30px;
         width: 120px;
+    }
+
+    #sub-title {
+        margin-bottom: 30px;
     }
     
 }

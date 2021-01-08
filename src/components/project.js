@@ -2,6 +2,15 @@ import React from 'react';
 import styles from '../styles/project.module.css'
 import git from '../img/github.png'
 import { ReactComponent as Live} from '../img/livePreview.svg'
+import { ReactComponent as Html} from '../img/html-5.svg';
+import { ReactComponent as Css} from '../img/css.svg';
+import { ReactComponent as Javascript} from '../img/javascript.svg';
+import { ReactComponent as ReactIcon} from '../img/react.svg';
+import { ReactComponent as Gatsby} from '../img/gatsby.svg';
+import { ReactComponent as Heroku} from '../img/heroku.svg';
+import { ReactComponent as Netlify} from '../img/netlify.svg';
+import { ReactComponent as Express} from '../img/expressjs.svg';
+
 
 function CodeButton(props) {
     return (
@@ -24,6 +33,32 @@ function LiveButton(props) {
 }
 
 export default function Project(props) {
+    
+    let icons = props.icons.map(
+        icon => {
+            switch(icon) {
+                case 'html':
+                    return <Html />
+                case 'css':
+                    return <Css />
+                case 'js':
+                    return <Javascript />
+                case 'react':
+                    return <ReactIcon />
+                case 'gatsby':
+                    return <Gatsby />
+                case 'express':
+                    return <Express />
+                case 'netlify':
+                    return <Netlify />
+                case 'heroku':
+                    return <Heroku />
+                default:
+                    // eslint-disable-next-line
+                    return;
+            }    
+        }
+    )
 
     return (
       <div id={styles.wrapper}>
@@ -36,7 +71,7 @@ export default function Project(props) {
         </div>
         <div id={styles['text-wrap']}>
             <span id={styles.title}>{props.title}</span>
-            <span id={styles['sub-title']}>{props.subTitle}</span>
+            <div id={styles['sub-title']}>{icons}</div>
             <span id={styles['info']}>{props.info}</span>
         </div>
       </div>

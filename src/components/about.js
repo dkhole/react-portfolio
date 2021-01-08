@@ -15,6 +15,7 @@ import { ReactComponent as Gatsby} from '../img/gatsby.svg';
 import { ReactComponent as Node} from '../img/nodejs.svg';
 import { ReactComponent as Heroku} from '../img/heroku.svg';
 import { ReactComponent as Netlify} from '../img/netlify.svg';
+import { ReactComponent as Express} from '../img/expressjs.svg';
 
 export default function About(props) {
   useEffect(() => {
@@ -51,7 +52,7 @@ export default function About(props) {
               <div id={styles.email}><span>Email:</span>dkhlee419@gmail.com</div>
               <div id={styles.github}><span>Github:</span>www.github.com/dkhole</div>
             </div>
-              <div id={styles.skills}><Html /> <Css /> <Sass /> <Javascript /> <Typescript /> <ReactIcon /> <Gatsby /> <Node /> <Heroku /> <Netlify /></div>
+              <div id={styles.skills}><Html /> <Css /> <Sass /> <Javascript /> <Typescript /> <ReactIcon /> <Gatsby /> <Node /> <Express /> <Heroku /> <Netlify /></div>
           </div>
         </div>
 
