@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.7425705d.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.6559e994.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.6559e994.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.9ce4ee0d.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.9ce4ee0d.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.7686de59.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.7686de59.js.map",
     "static/js/2.79c1255b.chunk.js": "/react-portfolio/static/js/2.79c1255b.chunk.js",
@@ -25,7 +25,7 @@
     "static/media/livePreview.aed3473a.svg": "/react-portfolio/static/media/livePreview.aed3473a.svg",
     "static/media/netlify.c779369f.svg": "/react-portfolio/static/media/netlify.c779369f.svg",
     "static/media/nodejs.e5557285.svg": "/react-portfolio/static/media/nodejs.e5557285.svg",
-    "static/media/openchat.bc239ce1.png": "/react-portfolio/static/media/openchat.bc239ce1.png",
+    "static/media/openchat.1415793c.png": "/react-portfolio/static/media/openchat.1415793c.png",
     "static/media/physio.c8efec11.png": "/react-portfolio/static/media/physio.c8efec11.png",
     "static/media/react.05c79bfe.svg": "/react-portfolio/static/media/react.05c79bfe.svg",
     "static/media/sass.e10750ef.svg": "/react-portfolio/static/media/sass.e10750ef.svg",
@@ -38,6 +38,6 @@
     "static/js/runtime-main.7686de59.js",
     "static/js/2.79c1255b.chunk.js",
     "static/css/main.7425705d.chunk.css",
-    "static/js/main.6559e994.chunk.js"
+    "static/js/main.9ce4ee0d.chunk.js"
   ]
 }
