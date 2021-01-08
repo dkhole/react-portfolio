@@ -49,6 +49,7 @@ function enableNight() {
   root.style.setProperty('--prim-font-col', 'rgb(255, 255, 255)');
   root.style.setProperty('--nav-col', 'rgb(30, 30, 30)');
   root.style.setProperty('--icon-col', 'rgb(240, 240, 240)');
+  root.style.setProperty('--box-shadow', '-7px 5px 4px 3px rgba(0, 0, 0, 1)');
 
   const lightIcon = document.getElementById('light-icon');
   lightIcon.style.fill = 'var(--prim-orange)';
@@ -65,6 +66,7 @@ function disableNight() {
   root.style.setProperty('--prim-font-col', ' rgb(0, 0, 0)');
   root.style.setProperty('--nav-col', 'rgb(226, 226, 226)');
   root.style.setProperty('--icon-col', 'rgb(0, 0, 0)');
+  root.style.setProperty('--box-shadow', '-7px 5px 4px 3px rgba(0, 0, 0, 0.1)');
 
   const lightIcon = document.getElementById('light-icon');
   lightIcon.style.fill = 'none';

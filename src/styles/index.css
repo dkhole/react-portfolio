@@ -22,6 +22,7 @@
   --prim-font-col: rgb(0, 0, 0); 
   --button-col: rgb(255, 184, 0);
   --icon-col: rgb(0, 0, 0);
+  --box-shadow: -7px 5px 4px 3px rgba(0, 0, 0, 0.1);
 }
 
 html, body {
@@ -74,6 +75,14 @@ body {
 
 .face-line-night {
   stroke: white !important;
+}
+
+.proj-box {
+  box-shadow: -7px 5px 4px 3px rgba(0, 0, 0, 0.05);
+}
+
+.proj-box-night {
+  box-shadow: -7px 5px 4px 3px rgba(0, 0, 0, 1);
 }
 
 

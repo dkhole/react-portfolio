@@ -1,15 +1,15 @@
 #wrapper {
     height: auto;
-    width: calc(80% - 80px);
+    width: calc(80% - 40px);
     background-color: white;
     color: black;
     border-radius: 50px;
     margin: 50px;
-    box-shadow: -7px 5px 4px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--box-shadow);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 35px;
+    padding: 25px;
 }
 
 #screenshot-wrap {
@@ -19,8 +19,8 @@
 }
 
 #screenshot {
-    height: auto;
-    width: max(70%, 250px);
+    max-height: 220px;
+    width: max(95%, 250px);
     border-radius: 50px;
     margin-bottom: 20px;
 }
@@ -33,13 +33,12 @@
 
 }
 
-#previews input {
+#previews a {
     height: 30px;
     width: max(100%, 110px);
     border-radius: 15px;
     position: absolute;
     cursor: pointer;
-
 }
 
 #code-wrap {
@@ -78,7 +77,7 @@
 }
 
 #live {
-    background-color: var(--prim-orange);
+    background-color: var(--button-col);
     border: 1px solid #CFCFCF;
 }
 
@@ -150,7 +149,7 @@
         width: 120px;
     }
 
-    #previews input {
+    #previews a {
         height: 30px;
         width: 120px;
     }
