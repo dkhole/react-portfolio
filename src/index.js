@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 import './styles/index.css';
 import Home from './components/home.js';
 import Projects from './components/projects.js';
@@ -24,17 +24,17 @@ function nightMode() {
 }
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Route exact path="/react-portfolio" render={() => (
+  <HashRouter basename="/react-portfolio/">
+    <Route exact path="/" render={() => (
       <Home nightMode={nightMode} darkMode={isNight}/>
     )} />
-    <Route exact path="/react-portfolio/projects" render={() => (
+    <Route exact path="/projects" render={() => (
       <Projects nightMode={nightMode} darkMode={isNight}/>
     )} />
-    <Route exact path="/react-portfolio/about" render={() => (
+    <Route exact path="/about" render={() => (
       <About nightMode={nightMode} darkMode={isNight}/>
     )} />
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById('root')
 );
 
