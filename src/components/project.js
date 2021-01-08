@@ -11,7 +11,6 @@ import { ReactComponent as Heroku} from '../img/heroku.svg';
 import { ReactComponent as Netlify} from '../img/netlify.svg';
 import { ReactComponent as Express} from '../img/expressjs.svg';
 
-
 function CodeButton(props) {
     return (
         <div id={styles['code-wrap']}>

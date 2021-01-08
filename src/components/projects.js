@@ -12,7 +12,6 @@ import sequence from '../img/sequence.png'
 import physio from '../img/physio.png'
 import todo from '../img/todo.png'
 
-
 export default function Projects(props) {
     return (
       <div id={styles.wrapper}>

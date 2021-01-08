@@ -17,8 +17,6 @@ function Button() {
   );
 }
 
-
-
 export default function Home(props) {
 
   useEffect(() => {

@@ -6,8 +6,6 @@ import Home from './components/home.js';
 import Projects from './components/projects.js';
 import About from './components/about.js';
 
-
-
 let isNight = false;
 
 function nightMode() {
