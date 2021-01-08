@@ -28,10 +28,10 @@ ReactDOM.render(
     <Route exact path="/react-portfolio" render={() => (
       <Home nightMode={nightMode} darkMode={isNight}/>
     )} />
-    <Route path="/projects" render={() => (
+    <Route exact path="/react-portfolio/projects" render={() => (
       <Projects nightMode={nightMode} darkMode={isNight}/>
     )} />
-    <Route path="/about" render={() => (
+    <Route exact path="/react-portfolio/about" render={() => (
       <About nightMode={nightMode} darkMode={isNight}/>
     )} />
   </BrowserRouter>,
