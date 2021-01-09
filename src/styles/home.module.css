@@ -40,8 +40,9 @@ span span {
 }
 
 #face {
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
+    margin-top: 75px;
 }
 
 #git {
@@ -94,7 +95,7 @@ span span {
     }
 
     #face {
-        height: 750px;
-        width: 750px;
+        height: 550px;
+        width: 550px;
     }
 }

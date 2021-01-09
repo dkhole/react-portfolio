@@ -37,7 +37,7 @@ export default function Hamburger(props) {
       <span></span>
 
       <div id={styles['ham-links']}>
-          <Link to="/"><div id="home-wrap"><Home id="home" className={styles.icon}/></div></Link>
+          <Link to="/"><div id="home-wrap"><Home id="home" className={styles.icon} alt="home"/></div></Link>
           <Link to="/projects"><div id="proj-wrap"><ProjIcon id="proj" className={styles.icon}/></div></Link>
           <Link to="/about"><div id="about-wrap"><About id="about" className={styles.icon}/></div></Link>
           <div id="light-wrap" onClick={props.toggleNightMode}><Light id="light" className={styles.icon}/></div>
