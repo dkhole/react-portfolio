@@ -43,7 +43,7 @@ function enableNight() {
   });
 
   const root = document.documentElement;
-  root.style.setProperty('--background-col', 'rgb(66, 66, 66)');
+  root.style.setProperty('--background-col', 'rgb(47, 47, 47)');
   root.style.setProperty('--prim-font-col', 'rgb(255, 255, 255)');
   root.style.setProperty('--nav-col', 'rgb(30, 30, 30)');
   root.style.setProperty('--icon-col', 'rgb(240, 240, 240)');
