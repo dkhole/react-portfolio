@@ -10,6 +10,7 @@ import { ReactComponent as Gatsby} from '../img/gatsby.svg';
 import { ReactComponent as Heroku} from '../img/heroku.svg';
 import { ReactComponent as Netlify} from '../img/netlify.svg';
 import { ReactComponent as Express} from '../img/expressjs.svg';
+import { ReactComponent as Mobile} from '../img/mobile.svg';
 
 function CodeButton(props) {
     return (
@@ -52,6 +53,8 @@ export default function Project(props) {
                     return <Netlify />
                 case 'heroku':
                     return <Heroku />
+                case 'not-mobile':
+                    return <Mobile />
                 default:
                     // eslint-disable-next-line
                     return;
