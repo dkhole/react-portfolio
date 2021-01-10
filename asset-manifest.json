@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.510017e0.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.110064cd.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.110064cd.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.51d2a720.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.51d2a720.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.7686de59.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.7686de59.js.map",
     "static/js/2.6bf83ad3.chunk.js": "/react-portfolio/static/js/2.6bf83ad3.chunk.js",
@@ -24,6 +24,7 @@
     "static/media/layers.4d273a9c.svg": "/react-portfolio/static/media/layers.4d273a9c.svg",
     "static/media/light.7cf96912.svg": "/react-portfolio/static/media/light.7cf96912.svg",
     "static/media/livePreview.aed3473a.svg": "/react-portfolio/static/media/livePreview.aed3473a.svg",
+    "static/media/mobile.1e3cea91.svg": "/react-portfolio/static/media/mobile.1e3cea91.svg",
     "static/media/netlify.c779369f.svg": "/react-portfolio/static/media/netlify.c779369f.svg",
     "static/media/nodejs.e5557285.svg": "/react-portfolio/static/media/nodejs.e5557285.svg",
     "static/media/openchat.1415793c.png": "/react-portfolio/static/media/openchat.1415793c.png",
@@ -39,6 +40,6 @@
     "static/js/runtime-main.7686de59.js",
     "static/js/2.6bf83ad3.chunk.js",
     "static/css/main.510017e0.chunk.css",
-    "static/js/main.110064cd.chunk.js"
+    "static/js/main.51d2a720.chunk.js"
   ]
 }
