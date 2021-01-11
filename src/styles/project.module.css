@@ -1,3 +1,12 @@
+#tilt {
+    display: flex;
+    justify-content: center;
+    -webkit-perspective: 6000px;
+    -moz-perspective: 6000px;
+    perspective: 6000px;
+
+}
+
 #wrapper {
     height: auto;
     width: calc(80% - 40px);
@@ -10,6 +19,7 @@
     flex-direction: column;
     align-items: center;
     padding: 25px;
+    transform-style: preserve-3d;
 }
 
 #screenshot-wrap {
@@ -119,6 +129,13 @@
 }
 
 @media(min-width: 900px) {
+
+    #tilt {
+        width: 800px;
+        -webkit-perspective: 1500px;
+        -moz-perspective: 1500px;
+        perspective: 1500px;
+    }
 
     #wrapper {
         height: 250px;
