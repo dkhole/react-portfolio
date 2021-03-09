@@ -55,7 +55,7 @@ export default function About({isNight, toggleNightMode, navStatus, setNavStatus
               <div id={styles.github}><span>Github:</span>www.github.com/dkhole</div>
             </div>
             <div id={styles.about}>
-              <span>I'm at the moment focused on the web but building is my passion and programming is my tool. Seeing an end result is what really drives me and writing clean thoughtful code to get me there is what gives me a sense of accomplisment. I am comfortable using the below technologies and am working everyday to better my skills.</span>
+              <span>At the moment i'm focused on the web but building and programming is my passion. Seeing an end result is what really drives me and writing clean thoughtful code to get me there is what gives me a sense of accomplishment. I am comfortable using the below technologies and am working everyday to refine my skills.</span>
             </div>
               <div id={styles.skills}><Html /> <Css /> <Sass /> <Javascript /> <Typescript /> <ReactIcon /> <Gatsby /> <Node /> <Express /> <Heroku /> <Netlify /> <Postgres /></div>
           </div>
@@ -91,7 +91,7 @@ export default function About({isNight, toggleNightMode, navStatus, setNavStatus
               <div id={styles.github}><span>Github:</span>www.github.com/dkhole</div>
             </div>
             <div id={styles.about}>
-            <span>I'm at the moment focused on the web but building is my passion and programming is my tool. Seeing an end result is what really drives me and writing clean thoughtful code to get me there is what gives me a sense of accomplisment. I am comfortable using the below technologies and am working everyday to better my skills.</span>
+            <span>At the moment i'm focused on the web but building and programming is my passion. Seeing an end result is what really drives me and writing clean thoughtful code to get me there is what gives me a sense of accomplishment. I am comfortable using the below technologies and am working everyday to refine my skills.</span>
             </div>
               <div id={styles.skills}><Html /> <Css /> <Sass /> <Javascript /> <Typescript /> <ReactIcon /> <Gatsby /> <Node /> <Express /> <Heroku /> <Netlify /> <Postgres /></div>
           </div>
