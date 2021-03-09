@@ -45,12 +45,10 @@
 #face-wrapper {
     height: 200px;
     width: 200px;
-    border: 1px solid grey;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
-    border-radius: 100%;
 }
 
 #face {
@@ -104,6 +102,14 @@
     height: 30px;
     width: 30px;
     margin: 5px;
+}
+
+#about {
+    font-family: OpenSans;
+    font-size: 13px;
+    text-align: left;
+    margin-bottom: 40px;
+    line-height: 25px;
 }
 
 @media(min-width: 900px) {

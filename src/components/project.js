@@ -10,6 +10,7 @@ import { ReactComponent as Gatsby} from '../img/gatsby.svg';
 import { ReactComponent as Heroku} from '../img/heroku.svg';
 import { ReactComponent as Netlify} from '../img/netlify.svg';
 import { ReactComponent as Express} from '../img/expressjs.svg';
+import { ReactComponent as Postgres} from '../img/postgresql.svg';
 import { ReactComponent as Mobile} from '../img/mobile.svg';
 
 function CodeButton(props) {
@@ -17,7 +18,6 @@ function CodeButton(props) {
         <div id={styles['code-wrap']}>
             {/* eslint-disable-next-line*/}
             <a id={styles.code} type="button" href={props.gitLink}><img src={git} alt="github logo for link"></img></a>
-            
         </div>
     )
 }
@@ -59,6 +59,8 @@ export default function Project(props) {
                     return <Heroku />
                 case 'not-mobile':
                     return <Mobile />
+                case 'postgres':
+                    return <Postgres />
                 default:
                     // eslint-disable-next-line
                     return;
