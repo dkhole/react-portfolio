@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import { HashRouter, Route } from "react-router-dom";
 import './styles/index.css';
-import hamStyles from './styles/hamburger.module.css';
 import Home from './components/home.js';
 import Projects from './components/projects.js';
 import About from './components/about.js';

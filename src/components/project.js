@@ -17,7 +17,7 @@ function CodeButton(props) {
     return (
         <div id={styles['code-wrap']}>
             {/* eslint-disable-next-line*/}
-            <a id={styles.code} type="button" href={props.gitLink}><img src={git} alt="github logo for link"></img></a>
+            <a id={styles.code} title="code preview" type="button" href={props.gitLink}><img src={git} alt="github logo for link"></img></a>
         </div>
     )
 }
@@ -27,7 +27,7 @@ function LiveButton(props) {
         <div id={styles['live-wrap']}>
             
             {/* eslint-disable-next-line*/}
-            <a id={styles.live} type="button" href={props.liveLink}><Live /></a>
+            <a id={styles.live} title="live preview" type="button" href={props.liveLink}><Live /></a>
         </div>
     )
 }

@@ -10,7 +10,6 @@ import perntodo from '../img/perntodo.png'
 import openChat from '../img/openchat.png'
 import sequence from '../img/sequence.png'
 import physio from '../img/physio.png'
-import todo from '../img/todo.png'
 
 export default function Projects({ toggleNightMode, isNight, navStatus, setNavStatus }) {
   if(navStatus) {
