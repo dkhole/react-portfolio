@@ -32,7 +32,7 @@ const drawFaceSvg = () => {
     line.getBoundingClientRect();
     // Define our transition
     line.style.transition = line.style.WebkitTransition =
-      'stroke-dashoffset 2s ease-in-out';
+      'stroke-dashoffset 3s ease-in-out';
     // Go!
     line.style.strokeDashoffset = '0';
   });

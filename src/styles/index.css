@@ -78,11 +78,11 @@ body {
 }
 
 #glass-frame1, #glass-frame2, #brows1, #brows2, #brows3, #shirt {
-  -webkit-animation:  fadein 3.5s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation:  fadein 3.5s; /* Firefox < 16 */
-   -ms-animation:  fadein 3.5s; /* Internet Explorer */
-    -o-animation:  fadein 3.5s; /* Opera < 12.1 */
-       animation:  fadein 3.5s;
+  -webkit-animation:  fadein 4.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation:  fadein 4.5s; /* Firefox < 16 */
+   -ms-animation:  fadein 4.5s; /* Internet Explorer */
+    -o-animation:  fadein 4.5s; /* Opera < 12.1 */
+       animation:  fadein 4.5s;
 }
 
 .proj-box {
