@@ -77,6 +77,14 @@ body {
   stroke: white !important;
 }
 
+#glass-frame1, #glass-frame2, #brows1, #brows2, #brows3, #shirt {
+  -webkit-animation:  fadein 3.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation:  fadein 3.5s; /* Firefox < 16 */
+   -ms-animation:  fadein 3.5s; /* Internet Explorer */
+    -o-animation:  fadein 3.5s; /* Opera < 12.1 */
+       animation:  fadein 3.5s;
+}
+
 .proj-box {
   box-shadow: -7px 5px 4px 3px rgba(0, 0, 0, 0.05);
 }
@@ -89,4 +97,31 @@ body {
   #light-wrap {
     margin-top: calc(100vh - 500px);
   }
+}
+
+@keyframes fadein {
+  0% { opacity:0; }
+  66% { opacity:0.1; }
+  100% { opacity:1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  0% { opacity:0; }
+  66% { opacity:0.1; }
+  100% { opacity:1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  0% { opacity:0; }
+  66% { opacity:0.1; }
+  100% { opacity:1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  0% { opacity:0; }
+  66% { opacity:0.1; }
+  100% { opacity:1; }
 }
