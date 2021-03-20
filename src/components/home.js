@@ -13,7 +13,7 @@ const Button = () => {
   return (
     <div id={buttonStyles.wrapper}>
       <div id={buttonStyles.shadow}></div>
-      <Link to="/projects"><input type="button" value="Projects"></input></Link>
+      <Link to="/projects"><input type="button" value="PROJECTS"></input></Link>
     </div>
   );
 }
