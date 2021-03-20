@@ -32,8 +32,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /**dont think perspective is working**/
-
 }
 
 @media(min-width: 900px) {

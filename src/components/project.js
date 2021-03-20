@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from '../styles/project.module.css'
 import git from '../img/github.png'
 import { ReactComponent as Live} from '../img/livePreview.svg'
@@ -33,10 +33,6 @@ function LiveButton(props) {
 }
 
 export default function Project(props) {
-    const [xTilt, setXTilt] = useState(0);
-    const [yTilt, setYTilt] = useState(0);
-    const [trans, setTrans] = useState('none');
-    const [transZ, setTransZ] = useState(0);
     
     let icons = props.icons.map(
         icon => {
@@ -68,46 +64,17 @@ export default function Project(props) {
         }
     )
 
-    function animateTilt(e) {
-
-        //calculate mouse pos relative to container
-
-        const relX = e.pageX - e.currentTarget.getBoundingClientRect().x;
-        const relY = e.screenY - e.currentTarget.getBoundingClientRect().y;
-
-       
-        console.log(e, e.currentTarget.getBoundingClientRect());
-
-        let xAxis = e.currentTarget.getBoundingClientRect().width / 2 - relX;
-        let yAxis = e.currentTarget.getBoundingClientRect().height / 2 - relY;
-
-        setXTilt(xAxis / 30);
-        setYTilt(yAxis / 30);
-    }
-
-    function remTransition() {
-        setTrans('none');
-        setTransZ('75px');
-    }
-
-    function animateTiltBack() {
-        setXTilt(0);
-        setYTilt(0);
-        setTrans('all 0.5s ease');
-        setTransZ('0');
-    }
-
     return (
-      <div id={styles.tilt} onMouseMove={animateTilt} onMouseEnter={remTransition} onMouseLeave={animateTiltBack}>
-        <div id={styles.wrapper} style={{transform: `rotateY(${xTilt}deg) rotateX(${yTilt}deg)`, transition: trans}}>
-            <div id={styles['screenshot-wrap']} style={{transform: `translateZ(${transZ})`}}>
+      <div id={styles.tilt} >
+        <div id={styles.wrapper} >
+            <div id={styles['screenshot-wrap']} >
                 <img id={styles.screenshot} src={props.screenshot} alt="weather gif"></img>
                 <div id={styles.previews}>
                     <CodeButton gitLink={props.gitLink}/>
                     <LiveButton liveLink={props.liveLink}/>
                 </div>
             </div>
-            <div id={styles['text-wrap']} style={{transform: `translateZ(${transZ})`}}>
+            <div id={styles['text-wrap']} >
                 <span id={styles.title}>{props.title}</span>
                 <div id={styles['sub-title']}>{icons}</div>
                 <span id={styles['info']}>{props.info}</span>
