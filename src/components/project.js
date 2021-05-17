@@ -12,6 +12,7 @@ import { ReactComponent as Netlify} from '../img/netlify.svg';
 import { ReactComponent as Express} from '../img/expressjs.svg';
 import { ReactComponent as Postgres} from '../img/postgresql.svg';
 import { ReactComponent as Mobile} from '../img/mobile.svg';
+import { ReactComponent as Node} from '../img/nodejs.svg';
 
 function CodeButton(props) {
     return (
@@ -57,6 +58,8 @@ export default function Project(props) {
                     return <Mobile />
                 case 'postgres':
                     return <Postgres />
+                case 'node':
+                    return <Node />
                 default:
                     // eslint-disable-next-line
                     return;
